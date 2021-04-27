@@ -7,10 +7,7 @@ The dataset used in our work was obtained from the following:
 i. Covid X-Ray Image Dataset - https://github.com/ieee8023/covid-chestxray-dataset for positive cases.
 ii. Kaggle X-Ray Chest Image-https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia for negative cases.
 
-Dataset	 COVID-19        Healthy    Total number
-          images         images          Of
-       Train  Test     Train  Test 	   images
- 1.	   157     39       157    39	      392
+We used frontal-view chest X-ray images in our research. The only X-ray views obtained were the posterior-anterior (PA) views. We divided the samples into two groups: COVID-19 patients with X-ray images and stable patients with X-ray images. The classes in the dataset are evenly distributed, with 196 images in each class for a total of 392 images in the dataset. The COVID-19 class in the dataset is made up of 196 chest X-ray images of patients diagnosed with COVID-19 that were gathered from various sources. On March 31, 2020, both of these sources were accessed. They are made up of X-ray images gathered from various journals, databases, and other sources. For this dataset, we used the collection of healthy patients' chest X-ray images from the Kaggle challenge "Chest X-ray Images (Pneumonia)". We chose 196 samples at random from the “normal” X-ray images, which correspond to healthy patients. This source was chosen because it has been frequently referenced in studies that suggest COVID-19 detection methods in X-rays.
 
 Conclusion and Future work:
 Early identification of patients infected with the new coronavirus is critical for selecting the best medication and preventing disease spread. Our findings show that extracting features with CNNs, applying the transfer learning principle, and then classifying these features using unified machine learning methods is an efficient way to classify X-ray images as regular or positive for COVID-19.The imagenet with VGG16 model performed best in Dataset, with a mean acc. of 98.73% and a mean F1-score of 99%.
